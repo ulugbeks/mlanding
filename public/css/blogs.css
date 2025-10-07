@@ -1,0 +1,293 @@
+body {
+    background: var(--bg-2);
+}
+
+/* NAVBAR */
+
+.navbar {
+    color: var(--fg);
+    background: transparent;
+}
+
+/* BLOGS */
+
+.blogs {
+    margin: 100px 0;
+    padding-top: 40px;
+}
+
+.blogs .container {
+    display: flex;
+    gap: 40px;
+}
+
+.blogs__cards {
+    padding: 100px 40px;
+    background: var(--bg);
+    border-radius: 20px;
+    width: 70%;
+}
+
+.blogs .container hr {
+    margin: 44px 0;
+    background: var(--fg);
+    opacity: .3;
+}
+
+.blogs__card {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.blogs__card a:hover img {
+    transform: scale(100%);
+}
+
+.blogs__card a:hover .blogs__card-title {
+    color: var(--accent-bg);
+}
+
+.blogs__card-title {
+    position: relative;
+    width: fit-content;
+    color: var(--fg-2);
+    margin-top: 20px;
+    transition: 300ms;
+    font-weight: 700;
+}
+
+.blogs__card-preview {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.blogs__card-preview img {
+    transition: 600ms;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    transform: scale(105%);
+    object-fit: cover;
+}
+
+.blogs__card-description {
+    color: var(--fg-2);
+    line-height: 1.7;
+}
+
+.blogs__sidebar {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.blogs__categories,
+.blogs__latest {
+    background-color: var(--bg);
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.blogs__categories h2,
+.blogs__latest h2 {
+    font-weight: 700;
+    color: var(--fg-2);
+    margin-bottom: 12px;
+}
+
+.blogs__categories a,
+.blogs__latest a {
+    transition: 300ms;
+}
+
+.blogs__categories a:hover,
+.blogs__latest a:hover {
+    color: var(--accent-bg);
+}
+
+
+/* BLOG */
+
+.blog {
+    margin-top: 100px;
+    background: var(--bg-2);
+    padding: 80px 0;
+}
+
+.blog .container {
+    background: var(--bg);
+    border-radius: 20px;
+    padding: 100px 6%;
+    box-shadow: -8px 0 16px -8px rgba(0, 0, 0, 0.08), 8px 0 16px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog .container hr {
+    margin: 44px 0;
+    background: var(--fg);
+    opacity: .3;
+}
+
+.blog img {
+    border-radius: 20px;
+    transition: 600ms;
+    width: 88%;
+    border-radius: 20px;
+}
+
+.blog h1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.blog h2 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.blog h3 {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--fg-2);
+}
+
+.blog p {
+    color: var(--fg-2);
+    line-height: 1.7;
+}
+
+.blog ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog li {
+    margin-left: 40px;
+    font-size: 14px;
+    list-style-type: disc;
+    color: var(--fg-2);
+}
+
+.blog .center {
+    margin: 0 auto;
+}
+
+.blog .full {
+    width: 100%;
+}
+
+.blog button {
+    width: 48%;
+    height: 60px;
+    border: none;
+    border-radius: 100vw;
+    background: var(--accent-bg);
+    color: var(--bg);
+    font-size: 18px;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+    transition: 300ms;
+    font-weight: 500;
+}
+
+.blog button:hover {
+    background: var(--accent-fg);
+}
+
+@media (max-width: 768px) {
+    .blogs {
+        margin-top: 60px;
+    }
+
+    .blogs .container {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .blogs__cards,
+    .blogs__sidebar {
+        width: 100%;
+    }
+
+    .blogs .container hr {
+        margin: 28px 0;
+    }
+
+    .blogs__card {
+        width: 100%;
+        gap: 14px;
+    }
+
+    .blogs__card-title {
+        margin-top: 12px;
+        text-decoration: underline;
+    }
+
+    .blogs__card-preview {
+        border-radius: 16px;
+    }
+
+    .blogs__card-preview img {
+        border-radius: 16px;
+    }
+
+    .blog {
+        margin-top: 60px;
+    }
+
+    .blog .container {
+        padding: 40px 5%;
+        gap: 14px;
+    }
+
+    .blog .container hr {
+        margin: 28px 0;
+    }
+
+    .blog h1 {
+        font-size: 24px;
+    }
+
+    .blog h2 {
+        font-size: 18px;
+    }
+
+    .blog h3 {
+        font-size: 14px;
+    }
+
+    .blog p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .blog ul {
+        gap: 10px;
+    }
+
+    .blog li {
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .blog img {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .blog button {
+        width: 100%;
+        height: 48px;
+        font-size: 15px;
+    }
+}
